@@ -1,0 +1,437 @@
+.html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: initial;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    
+}
+a {
+    text-decoration: none;
+}
+main{
+    flex: 1;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+/*------ Header -------*/
+.header{
+    background: #F8F6F7 url(./imag/Фон\ шапки.png);
+    overflow: hidden;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.header .container{
+    position: relative;
+    padding: 30px 0 130px;
+}
+.hero{
+max-width: 540px;
+position: relative;
+z-index: 2;
+}
+.hero p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.hero h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.logo{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.navigation ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navigation li:not(:last-child){
+margin-right: 28px;
+}
+.navigation a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    transition: .15s color;
+    font-weight: 600;
+}
+.navigation a:hover{
+color: #00BF78;
+}
+.phone-info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.phone-info a{
+font-size: 18px;
+font-weight: 600;
+margin-bottom: 8px;
+color: #333;
+}
+.phone-info span{
+font-size: 11px;
+font-weight: 400;
+}
+.social{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*-- разобраться с кругом! ---*/
+.girl{
+    width: 524px;
+    height: 620px;
+    position: absolute;
+    top: 81px;
+    right: 100px;
+}
+.button{
+    border: none;
+    outline: 0;
+    background-color: #FB9475;
+    color: #fff;
+    text-align: center;
+    height: 48px;
+    width: 203px;
+    border-radius: 24px;
+}
+
+/*------- MAIN ------*/
+.main{
+    overflow: hidden;
+    flex: 1;
+}
+.main .container{
+    position:relative;
+    display: flex;
+}
+.description .container{
+    position: relative;
+}
+.description{
+    max-width: 570px;
+    max-height: 400px;
+    margin-top: 100px;
+    display:  block;
+
+}
+.description h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.description h5{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 32px;
+    line-height: 32px;
+}
+.description h6{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 26px;
+}
+
+/*---- Разобраться с расположением видео! ----*/
+.description-video{
+    /*max-width: 500px;
+    min-width: 250px;
+    width: 100%;*/
+    width: 445px;
+    height: 297px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    outline: 0;
+    display: column;
+    margin-top: 200px;
+    margin-left: 95px;
+
+   
+    
+}
+.description-video img{
+    object-fit: cover;
+}
+.video-overlay{
+    background: #333;
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+/*---- QUALITY ----*/
+.quality .container{
+    position: relative;
+}
+.quality{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.quality_kabinet h3, .quality_cosmetic h3, .quality_masters h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+.quality_kabinet h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    width: 296px;
+    height: 66px;
+    line-height: 22px;
+    margin-left: 27px;
+    margin-top: 12px;
+}
+.quality_cosmetic h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    width: 255px;
+    height: 66px;
+    line-height: 22px;
+    margin-left: 48px;
+    margin-top: 12px;
+}
+.quality_masters h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    width: 263px;
+    height: 66px;
+    line-height: 22px;
+    margin-left: 44px;
+    margin-top: 12px;
+}
+.quality_kabinet{
+    width: 350px;
+    height: 176px;
+    text-align: center;
+}
+.quality_cosmetic{
+    width: 350px;
+    height: 176px;
+    text-align: center;
+}
+.quality_masters{
+    width: 350px;
+    height: 176px;
+    text-align: center;
+}
+.img_quality{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 28px;
+}
+/*----*/
+
+/*---- SERVICES -----*/
+.services .container{
+    position: relative;
+    overflow: hidden;
+}
+.services_logo {
+ font-size: 36px;
+ font-weight: 700;
+}
+.services_description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1110px;
+    height: 807px;
+}
+.button_services{
+    border: none;
+    outline: 0;
+    background-color: #FB9475;
+    color: #fff;
+    text-align: center;
+    height: 34px;
+    width: 112px;
+    border-radius: 24px;
+    margin-top: 16px;
+}
+.manikur{
+    max-width: 350px;
+    max-height: 300px;
+}
+.gel-lak{
+    max-width: 350px;
+    max-height: 340px;
+    margin-left: 30px;
+}
+.bmanikur{
+    max-width: 350px;
+    max-height: 320px;
+    margin-left: 30px;
+ 
+}
+.pedikur{
+    max-width: 350px;
+    max-height: 300px;
+}
+.parifontropia{
+    max-width: 350px;
+    max-height: 340px;
+    margin-left: 30px;
+}
+.services_description h4{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 8px;
+}
+
+.img-service{
+    max-width: 350px;
+    max-height: 180px;
+    border-radius: 8px;
+}
+
+.pedikur, .parifontropia{
+    margin-top: 55px;
+}
+/*------*/
+ 
+.hero h1,.description h1 {
+font-size:48px;
+font-weight:700;
+}
+    
+.navigation ul,.navigation_price ul,.navigation_footer ul {
+list-style:none;
+display:flex;
+margin:0;
+padding:0;
+}
+    
+.navigation li:not(:last-child),.navigation_price li:not(:last-child),.navigation_footer li:not(:last-child) {
+margin-right:28px;
+}
+    
+.quality_kabinet,.quality_cosmetic,.quality_masters {
+width:350px;
+height:176px;
+}
+    
+.services .container {
+position:relative;
+overflow:hidden;
+}
+    
+.manikur,.pedikur {
+max-width:350px;
+max-height:300px;
+}
+    
+/*--PRICE--*/
+.price .container{
+    position: relative;
+    overflow: hidden;
+}
+.navigation_price a {
+font-size:14px;
+text-decoration:none;
+color:#333;
+transition:.15s color;
+font-weight:500;
+text-align:right;
+}
+.navigation_price ul{
+height: 23px;
+width: 794px;
+}
+.table_price{
+    margin-top: 47px;
+    width: 1015px;
+    height: 304px;
+}
+.navigation_price {
+    margin-top:32px;
+    }
+
+
+
+
+/*---MASTERS---*/
+.masters .container{
+    overflow: hidden;
+    position: relative;
+}
+.masters{
+    margin-top: 100px;
+    width: 100%;
+    height: 697px;
+    background-color: #F8F6F7;
+}
+
+
+
+
+
+
+
+
+    /*-----FOOTER------*/
+.navigation_footer a{
+font-size:12px;
+text-decoration:none;
+color:#333;
+transition:.15s color;
+font-weight:600;
+}
+        
+.navigation_footer {
+width:1440px;
+height:38px;
+
+}
