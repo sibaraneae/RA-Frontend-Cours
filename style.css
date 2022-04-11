@@ -462,8 +462,6 @@ margin: 0;
     display: flex;
     justify-content: center;
     margin-top: 24px;
-  
-    
 }
 .masters_team__irina{
     width: 255px;
@@ -482,6 +480,21 @@ margin: 0;
 }
 .masters_team__img{
     border-radius: 8px;
+}
+.masters_team__name{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.masters_team__discr{
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.masters_team__exp{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 12px;
 }
 
 /*-----FOOTER------*/
