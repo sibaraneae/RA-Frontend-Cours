@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,12 +19,14 @@
   </head>
 
   <body>
+
     <div class="wrapper">
+
       <header class="header">
         <div class="container">
-          <div class="header-top">
-            <a href="/" class="logo">Мир красоты</a>
-            <nav class="navigation">
+          <div class="header__top">
+            <a href="/" class="header__logo">Мир красоты</a>
+            <nav class="header__nav">
               <ul>
                 <li><a href="#">Услуги и цены</a></li>
                 <li><a href="#">Мастера</a></li>
@@ -34,19 +35,21 @@
                 <li><a href="#">Контакты</a></li>
               </ul>
             </nav>
-            <div class="phone-info">
+            <div class="header__phone">
               <a href="tel:84996861762">8 (499) 686-17-62</a>
               <span>с 10.00 до 19.00 без выходных</span>
             </div>
           </div>
 
-          <div class="hero">
+          <div class="header__hero">
             <h1>Создай свой образ вместе с нами</h1>
             <p>Идеальный образ за 60 минут</p>
-            <button class="button">Записаться онлайн</button>
+            <button class="button">
+                <span class="button_label">Записаться онлайн</span>
+            </button>
           </div>
 
-          <ul class="social">
+          <ul class="header__social">
             <li>
               <a href="#"><img src="images\VK.png" alt="VK" /></a>
             </li>
@@ -58,7 +61,7 @@
             </li>
           </ul>
 
-          <div class="girl">
+          <div class="header__girl">
             <img src="images\girl.png" alt="#" />
           </div>
         </div>
@@ -122,17 +125,17 @@
         <div class="container">
           <div class="services">
             <div class="services_logo">
-              <h3>Популярные услуги</h3>
+              <h3 class="services_logo">Популярные услуги</h3>
             </div>
             <div class="services_description">
               <div class="manikur">
-                <img src="images\Популярные услуги.png" class="img-service" />
+                <img src="images\popular services.png" class="img-service" />
                 <h3>Маникюр</h3>
                 <h4>Аппаратный, комбинированный или классический.</h4>
                 <button class="button_services">Записаться</button>
               </div>
               <div class="gel-lak">
-                <img src="images\Популярные услуги.png" class="img-service" />
+                <img src="images\popular services.png" class="img-service" />
                 <h3>Покрытие гель-лак</h3>
                 <h4>
                   Гель-лак наносится в несколько слоев с использование базы и
@@ -141,7 +144,7 @@
                 <button class="button_services">Записаться</button>
               </div>
               <div class="bmanikur">
-                <img src="images\Популярные услуги.png" class="img-service" />
+                <img src="images\popular services.png" class="img-service" />
                 <h3>Бразильский маникюр</h3>
                 <h4>
                   Выполняется в одноразовых перчатках наполненных увлажняющим
@@ -150,13 +153,13 @@
                 <button class="button_services">Записаться</button>
               </div>
               <div class="pedikur">
-                <img src="images\Популярные услуги.png" class="img-service" />
+                <img src="images\popular services.png" class="img-service" />
                 <h3>Педикюр</h3>
                 <h4>Аппаратный, комбинированный или классический.</h4>
                 <button class="button_services">Записаться</button>
               </div>
               <div class="parifontropia">
-                <img src="images\Популярные услуги.png" class="img-service" />
+                <img src="images\popular services.png" class="img-service" />
                 <h3>Парафинотерапия</h3>
                 <h4>
                   Благодаря этой процедуре увлажнение кожи увеличивается на 80%,
@@ -170,7 +173,7 @@
 
         <div class="container">
           <div class="price">
-            <h1>Услуги и цены</h1>
+            <h1 class="price__logo">Услуги и цены</h1>
             <nav class="navigation_price">
               <ul>
                 <li><a href="#">Стрижка и укладка</a></li>
@@ -181,13 +184,59 @@
                 <li><a href="#">Массаж</a></li>
               </ul>
             </nav>
-            <div class="table_price"></div>
+
+            <div class="table-price">
+            <div class="table-price__women">
+                <h3 class="table-price_title">Женская стрижка</h3>
+                <h4 class="table-price_descr">Короткие волосы</h4>
+                
+            </div>
+            </div>
+          </div>
+        </div>
+            
+        <div class="container">
+          <div class="masters">
+              <div class="masters__logo">
+                  <h1 class="masters__logo">Мастера</h1>
+              </div>
+            <div class="masters__team_descr">
+                <p class="masters__team_descr">Дружная команда настоящих профессионалов</p>
+            </div>
+            <div class="masters_team">
+                <div class="masters_team__irina">
+                    <img class="masters_team__img" src="images\IRINA.png" alt="\"/>
+                    <div class="masters_team__name">Краснова Ирина</div>
+                    <div class="masters_team__discr">Мастер ногтевого сервиса</div>
+                    <div class="masters_team__exp">Опыт работы 5 лет</div>
+                </div>
+
+                <div class="masters_team__janna">
+                    <img class="masters_team__img" src="images/JANNA.png" alt="\"/>
+                    <div class="masters_team__name">Капилова Жанна</div>
+                    <div class="masters_team__discr">Визажист-стилист</div>
+                    <div class="masters_team__exp">Опыт работы 5 лет</div>
+                </div>
+
+                <div class="masters_team__alina">
+                    <img class="masters_team__img" src="images/ALINA.png" alt="\"/>
+                    <div class="masters_team__name">Киселева Алина</div>
+                    <div class="masters_team__discr">Парикмахер</div>
+                    <div class="masters_team__exp">Опыт работы 5 лет</div>
+                </div>
+
+                <div class="masters_team__elena">
+                    <img class="masters_team__img" src="images/ELENA.png" alt="\"/>
+                    <div class="masters_team__name">Иванова Елена</div>
+                    <div class="masters_team__discr">Мастер ногтевого сервиса</div>
+                    <div class="masters_team__exp">Опыт работы 5 лет</div>
+                </div>
+
+            </div>
           </div>
         </div>
 
-        <div class="container">
-          <div class="masters">afefe</div>
-        </div>
+
       </main>
 
       <footer class="footer">
