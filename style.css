@@ -35,8 +35,9 @@ main{
 
 /*------ Header -------*/
 .header{
-    background: #F8F6F7 url(./imag/Фон\ шапки.png);
+    background: #F8F6F7 url(./images/Фон\ шапки.png);
     overflow: hidden;
+    flex-shrink: 0;
 }
 .header-top{
     display: flex;
@@ -132,7 +133,6 @@ font-weight: 400;
 
 /*------- MAIN ------*/
 .main{
-    overflow: hidden;
     flex: 1;
 }
 .main .container{
